@@ -1006,17 +1006,12 @@ func TestCNIAddOn(t *testing.T) {
 		// 	},
 		// 	valid: true,
 		// },
-		// {
-		// 	n: CNI{
-		// 		Provider: "contiv",
-		// 		Options: CNIOptions{
-		// 			Calico: CalicoOptions{
-		// 				Mode: "overlay",
-		// 			},
-		// 		},
-		// 	},
-		// 	valid: true,
-		// },
+		{
+			n: CNI{
+				Provider: "contiv",
+			},
+			valid: true,
+		},
 		// {
 		// 	n: CNI{
 		// 		Provider: "custom",
